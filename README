@@ -1,0 +1,14 @@
+The winning submission to the Barracuda 2011 Michigan contest.  To run just do
+
+make
+./server ./dumb 4776
+
+And the game RPC server will be started on port 4776.  dumb is in fact the final
+bot and remains with the name 'dumb' for legacy reasions :).  dump.cpp:valuate()
+is where all the magic happens.  You can play bots together without using RPC
+using player like
+
+./player ./dumb ./dumb
+
+Just implement the protocol to the pipes passed on the command line as you can
+see done by dumb.
